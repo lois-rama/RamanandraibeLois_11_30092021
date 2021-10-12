@@ -20,6 +20,7 @@
     align-self: center;
     margin: 0 10px;
     font-size: 48px;
+    font-weight: 500;
     color: white;
 }
 
@@ -30,4 +31,10 @@
     height: 100%;
     background-color: black;
     opacity: 0.3;
+}
+
+@media screen and (max-width: 650px){
+    .bannerText{
+        font-size: 37px;
+    }
 }

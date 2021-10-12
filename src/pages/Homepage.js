@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
 import {propertiesData as Datas} from '../data/data';
+import '../styles/pages/Homepage.css'
 
 function Homepage(){
     return(

@@ -1,0 +1,16 @@
+footer{
+    background-color: #000;
+    padding: 3rem;
+    text-align: center;
+}
+.footerText {
+    margin-top: 1rem;
+    color: white;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 420px) {
+    .footerText {
+        font-size: 24px;
+    }
+}
