@@ -1,0 +1,34 @@
+
+.carrouselContainer {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.carrouselImage {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.current {
+    opacity: 1;
+}
+
+.RightArrow {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.LeftArrow {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    cursor: pointer;
+}
