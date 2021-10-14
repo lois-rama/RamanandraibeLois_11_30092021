@@ -1,0 +1,7 @@
+
+@media screen and (min-width: 750px){
+.dropdownContainer{
+    display: flex;
+    justify-content: space-between;
+}
+}

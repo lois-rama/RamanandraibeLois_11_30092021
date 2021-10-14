@@ -2,7 +2,7 @@
 .carrouselContainer {
     position: relative;
     width: 100%;
-    height: 420px;
+    height: 255px;
     border-radius: 25px;
     overflow: hidden;
 }
@@ -10,7 +10,7 @@
 .carrouselImage {
     position: absolute;
     width: 100%;
-    height: 420px;
+    height: 255px;
     object-fit: cover;
     opacity: 0;
 }
@@ -21,14 +21,27 @@
 
 .RightArrow {
     position: absolute;
-    top: 40%;
+    top: 48%;
     right: 3%;
     cursor: pointer;
+}
+.RightArrow, .LeftArrow{
+    height: 20px;
 }
 
 .LeftArrow {
     position: absolute;
-    top: 40%;
+    top: 48%;
     left: 3%;
     cursor: pointer;
+}
+
+@media screen and (min-width: 750px){
+    .carrouselContainer, .carrouselImage{
+        height: 415px ;
+    }
+    .RightArrow, .LeftArrow{
+        height: unset;
+        top: 43%
+    }
 }

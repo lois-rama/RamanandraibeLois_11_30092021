@@ -8,8 +8,11 @@ function Logement(props){
     const displayedLogement = Datas.find(property => property.id === props.match.params.id);
     return(
         <main>
-          <Carrousel imagesLogement={displayedLogement.pictures} />  
-          <Dropdown />
+          <Carrousel imagesLogement={displayedLogement.pictures} /> 
+          <div className ="dropdownContainer">
+            <Dropdown name="Description" content={displayedLogement.description} />
+            <Dropdown name="Equipements" content={displayedLogement.equipments} />
+          </div>
         </main>
         
     )
