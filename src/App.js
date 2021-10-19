@@ -1,6 +1,7 @@
 import './App.css';
 import Homepage from './pages/Homepage';
 import Logement from './pages/Logement';
+import Error404 from './pages/404error';
 import About from './pages/About';
 import Header from './components/Header'
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" exact component={Homepage}/>
           <Route path="/Logement/:id" component={Logement}/>
           <Route path="/APropos" component={About}/>
+          <Route component={Error404}/>
         </Switch>
         <Footer />
     </div>
