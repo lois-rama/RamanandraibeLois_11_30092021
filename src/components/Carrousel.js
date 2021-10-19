@@ -20,6 +20,7 @@ function Carrousel(props){
 
     return(
         <div className='carrouselContainer'>
+
            {props.imagesLogement.map((image, index) =>{
                return(
                    <img className={index === current ? "carrouselImage current" : "carrouselImage"} src={image} key={index} alt=""></img>

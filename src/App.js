@@ -5,7 +5,7 @@ import Error404 from './pages/404error';
 import About from './pages/About';
 import Header from './components/Header'
 import Footer from './components/Footer';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
           <Route path="/" exact component={Homepage}/>
           <Route path="/Logement/:id" component={Logement}/>
           <Route path="/APropos" component={About}/>
-          <Route component={Error404}/>
+          <Route path="/404" component={Error404}/>
+          <Redirect to="/404" />
         </Switch>
         <Footer />
     </div>
