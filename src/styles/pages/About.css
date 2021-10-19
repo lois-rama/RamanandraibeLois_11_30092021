@@ -1,0 +1,7 @@
+@media screen and (min-width: 750px){
+    .dropdownAboutContainer{
+        display: block;
+        margin: 0 100px
+    }
+
+}

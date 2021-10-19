@@ -10,7 +10,7 @@ function Header(){
             <img src={logo} alt="kasa-logo"/>
             <ul className="nav">
                 <NavLink exact to="/">
-                    <li className="navigationNavLink">Acceuil</li>
+                    <li className="navigationNavLink">Accueil</li>
                 </NavLink>
            
                 <NavLink exact to="/APropos">

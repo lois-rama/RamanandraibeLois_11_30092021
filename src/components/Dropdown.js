@@ -7,7 +7,7 @@ function Dropdown(props){
     const dropdownState = () => setDropdownOpen(!dropdownOpen);
 
     return(     
-    <div className="dropdown">
+    <div className={props.class}>
         <button className="dropdownBtn" onClick={dropdownState}>
             {props.name}
             <img className={dropdownOpen ? "arrow open" : "arrow"} src={DropdownArrow} alt=""></img>
