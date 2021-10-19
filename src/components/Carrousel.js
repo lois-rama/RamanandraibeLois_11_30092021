@@ -25,8 +25,8 @@ function Carrousel(props){
                return(
                    <img className={index === current ? "carrouselImage current" : "carrouselImage"} src={image} key={index} alt=""></img>
            )})}
-                       <img className ="RightArrow" alt="" src={RightArrow} onClick={nextImage}></img>
-                       <img className ="LeftArrow" onClick={prevImage} alt="" src={LeftArrow}></img>
+                       <img className ={length === 1 ? "hidden" : "RightArrow"} alt="" src={RightArrow} onClick={nextImage} ></img>
+                       <img className ={length === 1 ? "hidden" : "LeftArrow"} onClick={prevImage} alt="" src={LeftArrow}></img>
         </div>
     )
 
