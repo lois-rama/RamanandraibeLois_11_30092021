@@ -7,7 +7,7 @@ function InfoLogement(props){
         <div className="infoContainer">
             <div className="Wrapper">
                 <h1>{props.title}</h1>
-                <p>{props.location}</p>
+                <p className="location">{props.location}</p>
                 <div className="tagsContainer">
                     {props.tags.map((tag, index) => {
                         return(
@@ -20,8 +20,10 @@ function InfoLogement(props){
             </div>
             <div className="RatingHostWrapper">
                 <Rating rating={props.rating} />
-                <p className="host">{props.host.name}</p>
-                <img className="hostImg" src={props.host.picture} alt=""></img>
+                <div className="hostContainer">
+                    <p className="host">{props.host.name}</p>
+                    <img className="hostImg" src={props.host.picture} alt=""></img>
+                </div>
             </div>
         </div>
     )

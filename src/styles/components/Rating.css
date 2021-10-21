@@ -1,0 +1,19 @@
+.starsContainer{
+flex-grow: 1;
+}
+
+.star {
+    width: 15px;
+}
+@media screen and (min-width: 750px) {
+    .star {
+        width: 24px;
+        margin-right: 5px;
+    }
+    .starsContainer{
+        display: flex;
+        margin : 24px 0;
+        flex-grow: unset;
+        order: 1;
+    }
+}

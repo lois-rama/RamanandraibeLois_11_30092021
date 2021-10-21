@@ -1,0 +1,41 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ff6060;
+    margin: 0 58px;
+}
+
+.errorTitle {
+    margin-top: 150px;
+    font-size: 96px;
+    font-weight: 700;
+} 
+
+.errorText {
+    margin-top: 15px;
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.errorLink {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff6060;
+    text-decoration: underline;
+    margin-bottom: 100%;
+}
+
+@media screen and (min-width: 750px) {
+    .errorTitle {
+        font-size: 288px;
+    }
+    .errorText{
+        font-size: 36px;
+    }
+    .errorLink{
+        font-size: 18px;
+    }
+}

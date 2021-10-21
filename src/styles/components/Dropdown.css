@@ -31,9 +31,12 @@
     border-radius: 0 0 10px 10px;
 }
 
-.dropdownList, p{
+.dropdownList{
     list-style: none;
     padding: 10px;
+}
+.dropdownContent p{
+    padding: 10px; 
 }
 
 @media screen and (min-width: 750px) {
