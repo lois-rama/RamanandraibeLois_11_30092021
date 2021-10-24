@@ -11,8 +11,8 @@ function InfoLogement(props){
                 <div className="tagsContainer">
                     {props.tags.map((tag, index) => {
                         return(
-                        <div className="tag" >
-                            <p key={index + tag} className="tagText">{tag}</p>
+                        <div key={index + tag} className="tag" >
+                            <p className="tagText">{tag}</p>
                         </div>
                         )
                     })}
